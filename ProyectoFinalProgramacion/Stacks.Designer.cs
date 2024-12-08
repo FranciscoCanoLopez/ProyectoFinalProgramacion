@@ -34,6 +34,7 @@
             label2 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            btnSizeStaticStack = new Button();
             label3 = new Label();
             LblData = new Label();
             btnPeekStaticStack = new Button();
@@ -42,8 +43,16 @@
             lstStaticStack = new ListBox();
             txtInputStaticStack = new TextBox();
             tabPage2 = new TabPage();
+            BtnSizeDynamicStack = new Button();
+            label4 = new Label();
+            lstDynamicStack = new ListBox();
+            btnPeekDynamicStack = new Button();
+            btnPopDynamicStack = new Button();
+            txtDataDynamicStack = new TextBox();
+            btnPushDynamicStack = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // btnBack
@@ -87,6 +96,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(btnSizeStaticStack);
             tabPage1.Controls.Add(label3);
             tabPage1.Controls.Add(LblData);
             tabPage1.Controls.Add(btnPeekStaticStack);
@@ -101,6 +111,17 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Static Stack";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnSizeStaticStack
+            // 
+            btnSizeStaticStack.Location = new Point(167, 282);
+            btnSizeStaticStack.Margin = new Padding(3, 4, 3, 4);
+            btnSizeStaticStack.Name = "btnSizeStaticStack";
+            btnSizeStaticStack.Size = new Size(87, 53);
+            btnSizeStaticStack.TabIndex = 23;
+            btnSizeStaticStack.Text = "Size";
+            btnSizeStaticStack.UseVisualStyleBackColor = true;
+            btnSizeStaticStack.Click += btnSizeStaticStack_Click;
             // 
             // label3
             // 
@@ -174,6 +195,13 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(BtnSizeDynamicStack);
+            tabPage2.Controls.Add(label4);
+            tabPage2.Controls.Add(lstDynamicStack);
+            tabPage2.Controls.Add(btnPeekDynamicStack);
+            tabPage2.Controls.Add(btnPopDynamicStack);
+            tabPage2.Controls.Add(txtDataDynamicStack);
+            tabPage2.Controls.Add(btnPushDynamicStack);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -181,6 +209,78 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Dynamic stack";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // BtnSizeDynamicStack
+            // 
+            BtnSizeDynamicStack.Location = new Point(167, 282);
+            BtnSizeDynamicStack.Margin = new Padding(3, 4, 3, 4);
+            BtnSizeDynamicStack.Name = "BtnSizeDynamicStack";
+            BtnSizeDynamicStack.Size = new Size(87, 53);
+            BtnSizeDynamicStack.TabIndex = 20;
+            BtnSizeDynamicStack.Text = "Size";
+            BtnSizeDynamicStack.UseVisualStyleBackColor = true;
+            BtnSizeDynamicStack.Click += BtnSizeDynamicStack_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(14, 43);
+            label4.Name = "label4";
+            label4.Size = new Size(95, 20);
+            label4.TabIndex = 19;
+            label4.Text = "data to enter";
+            // 
+            // lstDynamicStack
+            // 
+            lstDynamicStack.Font = new Font("Berlin Sans FB", 27.75F, FontStyle.Bold);
+            lstDynamicStack.FormattingEnabled = true;
+            lstDynamicStack.ItemHeight = 57;
+            lstDynamicStack.Location = new Point(449, 27);
+            lstDynamicStack.Margin = new Padding(3, 4, 3, 4);
+            lstDynamicStack.Name = "lstDynamicStack";
+            lstDynamicStack.Size = new Size(315, 289);
+            lstDynamicStack.TabIndex = 18;
+            // 
+            // btnPeekDynamicStack
+            // 
+            btnPeekDynamicStack.Location = new Point(167, 221);
+            btnPeekDynamicStack.Margin = new Padding(3, 4, 3, 4);
+            btnPeekDynamicStack.Name = "btnPeekDynamicStack";
+            btnPeekDynamicStack.Size = new Size(87, 53);
+            btnPeekDynamicStack.TabIndex = 17;
+            btnPeekDynamicStack.Text = "Peek";
+            btnPeekDynamicStack.UseVisualStyleBackColor = true;
+            btnPeekDynamicStack.Click += btnPeekDynamicStack_Click;
+            // 
+            // btnPopDynamicStack
+            // 
+            btnPopDynamicStack.Location = new Point(167, 156);
+            btnPopDynamicStack.Margin = new Padding(3, 4, 3, 4);
+            btnPopDynamicStack.Name = "btnPopDynamicStack";
+            btnPopDynamicStack.Size = new Size(87, 53);
+            btnPopDynamicStack.TabIndex = 16;
+            btnPopDynamicStack.Text = "Pop";
+            btnPopDynamicStack.UseVisualStyleBackColor = true;
+            btnPopDynamicStack.Click += btnPopDynamicStack_Click;
+            // 
+            // txtDataDynamicStack
+            // 
+            txtDataDynamicStack.Location = new Point(118, 39);
+            txtDataDynamicStack.Margin = new Padding(3, 4, 3, 4);
+            txtDataDynamicStack.Name = "txtDataDynamicStack";
+            txtDataDynamicStack.Size = new Size(220, 27);
+            txtDataDynamicStack.TabIndex = 15;
+            // 
+            // btnPushDynamicStack
+            // 
+            btnPushDynamicStack.Location = new Point(167, 86);
+            btnPushDynamicStack.Margin = new Padding(3, 4, 3, 4);
+            btnPushDynamicStack.Name = "btnPushDynamicStack";
+            btnPushDynamicStack.Size = new Size(87, 53);
+            btnPushDynamicStack.TabIndex = 14;
+            btnPushDynamicStack.Text = "Push";
+            btnPushDynamicStack.UseVisualStyleBackColor = true;
+            btnPushDynamicStack.Click += btnPushDynamicStack_Click;
             // 
             // Stacks
             // 
@@ -196,6 +296,8 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -215,5 +317,13 @@
         private Button btnPushStaticStack;
         private ListBox lstStaticStack;
         private TextBox txtInputStaticStack;
+        private Button btnSizeStaticStack;
+        private Button BtnSizeDynamicStack;
+        private Label label4;
+        private ListBox lstDynamicStack;
+        private Button btnPeekDynamicStack;
+        private Button btnPopDynamicStack;
+        private TextBox txtDataDynamicStack;
+        private Button btnPushDynamicStack;
     }
 }
