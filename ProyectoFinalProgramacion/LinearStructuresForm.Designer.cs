@@ -108,6 +108,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "LinearStructuresForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LinearStructuresForm";
             ResumeLayout(false);
             PerformLayout();

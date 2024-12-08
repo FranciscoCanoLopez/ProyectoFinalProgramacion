@@ -23,6 +23,8 @@ namespace ProyectoFinalProgramacion
         readonly DoubleQueueList doubleQueueList = new DoubleQueueList();
         readonly PriorityQueueVectors priorityQueueVectors = new PriorityQueueVectors(5);
         readonly PriorityQueueVectorLists priorityQueueVectorLists = new PriorityQueueVectorLists(5);
+        readonly PriorityQueueListVectors priorityQueueListVectors = new PriorityQueueListVectors(5);
+        readonly PriorityQueueLists priorityQueueLists = new PriorityQueueLists(5);
 
         public Queues()
         {
@@ -533,5 +535,164 @@ namespace ProyectoFinalProgramacion
             }
         }
 
+        //Priority Queue Lists of Lists
+
+        private void btnEnqueuePriorityQueueLL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int value = int.Parse(txtElementPriorityQueueLL.Text);
+                int priority = int.Parse(txtPriorityPriorityQueueLL.Text);
+                priorityQueueLists.Enqueue(value, priority);
+                UpdatePriorityQueueLLDisplay();
+                txtElementPriorityQueueLL.Clear();
+                txtPriorityPriorityQueueLL.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDequeuePriorityQueueLL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int value = priorityQueueLists.Dequeue();
+                MessageBox.Show($"Dequeued: {value}", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdatePriorityQueueLLDisplay();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnShowPriorityQueueLL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var queueElements = priorityQueueLists.GetQueueElements();
+                lstPriorityQueueLL.Items.Clear();
+
+                int priority = 0;
+                foreach (var list in queueElements)
+                {
+                    if (list.Count > 0)
+                    {
+                        string priorityElements = $"Priority {priority}: {string.Join(", ", list)}";
+                        lstPriorityQueueLL.Items.Add(priorityElements);
+                    }
+                    priority++;
+                }
+
+                if (lstPriorityQueueLL.Items.Count == 0)
+                {
+                    MessageBox.Show("Priority queue is empty.", "Queue Elements", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void UpdatePriorityQueueLLDisplay()
+        {
+            lstPriorityQueueLL.Items.Clear();
+
+            var queueElements = priorityQueueLists.GetQueueElements();
+            int priority = 0;
+
+            foreach (var list in queueElements)
+            {
+                if (list.Count > 0)
+                {
+                    string priorityElements = $"Priority {priority}: {string.Join(", ", list)}";
+                    lstPriorityQueueLL.Items.Add(priorityElements);
+                }
+                priority++;
+            }
+        }
+
+        //Priority Queue Lists of Vectors
+
+        private void btnEnqueuePriorityQueueLV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int value = int.Parse(txtElementPriorityQueueLV.Text);
+                int priority = int.Parse(txtPriorityPriorityQueueLV.Text);
+                priorityQueueListVectors.Enqueue(value, priority);
+                UpdatePriorityQueueLVDisplay();
+                txtElementPriorityQueueLV.Clear();
+                txtPriorityPriorityQueueLV.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDeququqPriorityQueueLV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int value = priorityQueueListVectors.Dequeue();
+                MessageBox.Show($"Dequeued: {value}", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdatePriorityQueueLVDisplay();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnShowPriorityQueueLV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var queueElements = priorityQueueListVectors.GetQueueElements();
+                lstPriorityQueueLV.Items.Clear();
+                int priorityIndex = 0;  // Manually track the priority index
+
+                foreach (var priorityList in queueElements)
+                {
+                    if (priorityList.Count <= 0)
+                    {
+                        continue;  // Skip empty priority lists
+                    }
+
+                    // Use the priorityIndex to show the correct priority level
+                    string priorityElements = $"Priority {priorityIndex}: {string.Join(", ", priorityList)}";
+                    lstPriorityQueueLV.Items.Add(priorityElements);
+                    priorityIndex++;  // Increment the priority index
+                }
+
+                if (lstPriorityQueueLV.Items.Count == 0)
+                {
+                    MessageBox.Show("Priority queue is empty.", "Queue Elements", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void UpdatePriorityQueueLVDisplay()
+        {
+            lstPriorityQueueLV.Items.Clear();
+            var queueElements = priorityQueueListVectors.GetQueueElements();
+            int priorityIndex = 0;
+
+            foreach (var priorityList in queueElements)
+            {
+                if (priorityList.Count > 0)
+                {
+                    string priorityElements = $"Priority {priorityIndex}: {string.Join(", ", priorityList)}";
+                    lstPriorityQueueLV.Items.Add(priorityElements);
+                }
+                priorityIndex++;
+            }
+        }
     }
 }

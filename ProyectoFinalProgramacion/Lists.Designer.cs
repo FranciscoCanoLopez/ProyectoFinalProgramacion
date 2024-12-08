@@ -516,6 +516,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Lists";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Lists";
             tabControl.ResumeLayout(false);
             tabPage1.ResumeLayout(false);

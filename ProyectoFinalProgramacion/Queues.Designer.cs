@@ -30,6 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            label23 = new Label();
             btnShowSingleQueueVector = new Button();
             label7 = new Label();
             label3 = new Label();
@@ -38,6 +39,7 @@
             btnDequeueSimpleQueueVector = new Button();
             btnEnqueueSimpleQueueVector = new Button();
             tabPage2 = new TabPage();
+            label24 = new Label();
             btnShowSimpleQueueList = new Button();
             label4 = new Label();
             lstSimpleQueueList = new ListBox();
@@ -45,6 +47,7 @@
             btnDequeueSimpleQueueList = new Button();
             btnEnqueueSimpleQueueList = new Button();
             tabPage3 = new TabPage();
+            label25 = new Label();
             label6 = new Label();
             btnShowElementsCircularQueue = new Button();
             label5 = new Label();
@@ -53,6 +56,7 @@
             btnDequeueCircularQueue = new Button();
             btnEnqueueCircularQueue = new Button();
             tabPage4 = new TabPage();
+            label26 = new Label();
             btnShowDoubleQueueVector = new Button();
             btnRemoveRearDoubleQueueVector = new Button();
             btnRemoveFrontDoubleQueueVector = new Button();
@@ -62,6 +66,7 @@
             txtElementDoubleQueueVector = new TextBox();
             lstDoubleQueueVector = new ListBox();
             tabPage5 = new TabPage();
+            label22 = new Label();
             btnShowDoubleQueueList = new Button();
             btnRemoveRearDoubleQueueList = new Button();
             btnRemoveFrontDoubleQueueList = new Button();
@@ -71,6 +76,7 @@
             txtElementDoubleQueueList = new TextBox();
             lstDoubleQueueList = new ListBox();
             tabPage6 = new TabPage();
+            label27 = new Label();
             label12 = new Label();
             txtPriorityPriorityQueueVV = new TextBox();
             btnShowPriorityQueueVV = new Button();
@@ -81,6 +87,7 @@
             btnDequeuePriorityQueueVV = new Button();
             btnEnqueuePriorityQueueVV = new Button();
             tabPage7 = new TabPage();
+            label28 = new Label();
             label13 = new Label();
             txtPriorityPriorityQueueVL = new TextBox();
             btnShowPriorityQueueVL = new Button();
@@ -91,6 +98,7 @@
             btnDequeuePriorityQueueVL = new Button();
             btnEnqueuePriorityQueueVL = new Button();
             tabPage8 = new TabPage();
+            label29 = new Label();
             label16 = new Label();
             txtPriorityPriorityQueueLV = new TextBox();
             btnShowPriorityQueueLV = new Button();
@@ -101,6 +109,16 @@
             btnDeququqPriorityQueueLV = new Button();
             btnEnqueuePriorityQueueLV = new Button();
             tabPage9 = new TabPage();
+            label30 = new Label();
+            label19 = new Label();
+            txtPriorityPriorityQueueLL = new TextBox();
+            btnShowPriorityQueueLL = new Button();
+            label20 = new Label();
+            label21 = new Label();
+            lstPriorityQueueLL = new ListBox();
+            txtElementPriorityQueueLL = new TextBox();
+            btnDequeuePriorityQueueLL = new Button();
+            btnEnqueuePriorityQueueLL = new Button();
             btnBack = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -113,6 +131,7 @@
             tabPage6.SuspendLayout();
             tabPage7.SuspendLayout();
             tabPage8.SuspendLayout();
+            tabPage9.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -129,11 +148,12 @@
             tabControl1.Location = new Point(553, 20);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1114, 418);
+            tabControl1.Size = new Size(684, 418);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label23);
             tabPage1.Controls.Add(btnShowSingleQueueVector);
             tabPage1.Controls.Add(label7);
             tabPage1.Controls.Add(label3);
@@ -144,10 +164,19 @@
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1106, 385);
+            tabPage1.Size = new Size(676, 385);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Simple Queue (vector)";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(58, 26);
+            label23.Name = "label23";
+            label23.Size = new Size(157, 20);
+            label23.TabIndex = 19;
+            label23.Text = "Simple Queue (vector)";
             // 
             // btnShowSingleQueueVector
             // 
@@ -214,6 +243,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(label24);
             tabPage2.Controls.Add(btnShowSimpleQueueList);
             tabPage2.Controls.Add(label4);
             tabPage2.Controls.Add(lstSimpleQueueList);
@@ -223,10 +253,19 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1106, 385);
+            tabPage2.Size = new Size(676, 385);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Simple Queue (List)";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(58, 26);
+            label24.Name = "label24";
+            label24.Size = new Size(135, 20);
+            label24.TabIndex = 20;
+            label24.Text = "Simple Queue (list)";
             // 
             // btnShowSimpleQueueList
             // 
@@ -284,6 +323,7 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(label25);
             tabPage3.Controls.Add(label6);
             tabPage3.Controls.Add(btnShowElementsCircularQueue);
             tabPage3.Controls.Add(label5);
@@ -294,10 +334,19 @@
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1106, 385);
+            tabPage3.Size = new Size(676, 385);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Circular Queue (Vector)";
             tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(58, 26);
+            label25.Name = "label25";
+            label25.Size = new Size(161, 20);
+            label25.TabIndex = 21;
+            label25.Text = "Circular Queue (vector)";
             // 
             // label6
             // 
@@ -364,6 +413,7 @@
             // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(label26);
             tabPage4.Controls.Add(btnShowDoubleQueueVector);
             tabPage4.Controls.Add(btnRemoveRearDoubleQueueVector);
             tabPage4.Controls.Add(btnRemoveFrontDoubleQueueVector);
@@ -375,10 +425,19 @@
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(1106, 385);
+            tabPage4.Size = new Size(676, 385);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Double Queue (Vector)";
             tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(58, 26);
+            label26.Name = "label26";
+            label26.Size = new Size(161, 20);
+            label26.TabIndex = 22;
+            label26.Text = "Double Queue (Vector)";
             // 
             // btnShowDoubleQueueVector
             // 
@@ -456,6 +515,7 @@
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(label22);
             tabPage5.Controls.Add(btnShowDoubleQueueList);
             tabPage5.Controls.Add(btnRemoveRearDoubleQueueList);
             tabPage5.Controls.Add(btnRemoveFrontDoubleQueueList);
@@ -467,10 +527,19 @@
             tabPage5.Location = new Point(4, 29);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(1106, 385);
+            tabPage5.Size = new Size(676, 385);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Double Queue (List)";
             tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(58, 26);
+            label22.Name = "label22";
+            label22.Size = new Size(138, 20);
+            label22.TabIndex = 30;
+            label22.Text = "Double Queue (list)";
             // 
             // btnShowDoubleQueueList
             // 
@@ -548,6 +617,7 @@
             // 
             // tabPage6
             // 
+            tabPage6.Controls.Add(label27);
             tabPage6.Controls.Add(label12);
             tabPage6.Controls.Add(txtPriorityPriorityQueueVV);
             tabPage6.Controls.Add(btnShowPriorityQueueVV);
@@ -560,10 +630,19 @@
             tabPage6.Location = new Point(4, 29);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(1106, 385);
+            tabPage6.Size = new Size(676, 385);
             tabPage6.TabIndex = 5;
             tabPage6.Text = "priority queues (vectors of vectors)";
             tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(58, 26);
+            label27.Name = "label27";
+            label27.Size = new Size(233, 20);
+            label27.TabIndex = 28;
+            label27.Text = "Priority Queue (vectors of vectors)";
             // 
             // label12
             // 
@@ -646,6 +725,7 @@
             // 
             // tabPage7
             // 
+            tabPage7.Controls.Add(label28);
             tabPage7.Controls.Add(label13);
             tabPage7.Controls.Add(txtPriorityPriorityQueueVL);
             tabPage7.Controls.Add(btnShowPriorityQueueVL);
@@ -658,10 +738,19 @@
             tabPage7.Location = new Point(4, 29);
             tabPage7.Name = "tabPage7";
             tabPage7.Padding = new Padding(3);
-            tabPage7.Size = new Size(1106, 385);
+            tabPage7.Size = new Size(676, 385);
             tabPage7.TabIndex = 6;
             tabPage7.Text = "priority queues (vectors of lists)";
             tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(58, 26);
+            label28.Name = "label28";
+            label28.Size = new Size(211, 20);
+            label28.TabIndex = 37;
+            label28.Text = "Priority Queue (vectors of lists)";
             // 
             // label13
             // 
@@ -744,6 +833,7 @@
             // 
             // tabPage8
             // 
+            tabPage8.Controls.Add(label29);
             tabPage8.Controls.Add(label16);
             tabPage8.Controls.Add(txtPriorityPriorityQueueLV);
             tabPage8.Controls.Add(btnShowPriorityQueueLV);
@@ -756,10 +846,19 @@
             tabPage8.Location = new Point(4, 29);
             tabPage8.Name = "tabPage8";
             tabPage8.Padding = new Padding(3);
-            tabPage8.Size = new Size(1106, 385);
+            tabPage8.Size = new Size(676, 385);
             tabPage8.TabIndex = 7;
             tabPage8.Text = "priority queues (lists of vectors)";
             tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(58, 26);
+            label29.Name = "label29";
+            label29.Size = new Size(211, 20);
+            label29.TabIndex = 46;
+            label29.Text = "Priority Queue (lists of vectors)";
             // 
             // label16
             // 
@@ -785,6 +884,7 @@
             btnShowPriorityQueueLV.TabIndex = 43;
             btnShowPriorityQueueLV.Text = "Show";
             btnShowPriorityQueueLV.UseVisualStyleBackColor = true;
+            btnShowPriorityQueueLV.Click += btnShowPriorityQueueLV_Click;
             // 
             // label17
             // 
@@ -827,6 +927,7 @@
             btnDeququqPriorityQueueLV.TabIndex = 38;
             btnDeququqPriorityQueueLV.Text = "Dequeue";
             btnDeququqPriorityQueueLV.UseVisualStyleBackColor = true;
+            btnDeququqPriorityQueueLV.Click += btnDeququqPriorityQueueLV_Click;
             // 
             // btnEnqueuePriorityQueueLV
             // 
@@ -836,16 +937,115 @@
             btnEnqueuePriorityQueueLV.TabIndex = 37;
             btnEnqueuePriorityQueueLV.Text = "Enqueue";
             btnEnqueuePriorityQueueLV.UseVisualStyleBackColor = true;
+            btnEnqueuePriorityQueueLV.Click += btnEnqueuePriorityQueueLV_Click;
             // 
             // tabPage9
             // 
+            tabPage9.Controls.Add(label30);
+            tabPage9.Controls.Add(label19);
+            tabPage9.Controls.Add(txtPriorityPriorityQueueLL);
+            tabPage9.Controls.Add(btnShowPriorityQueueLL);
+            tabPage9.Controls.Add(label20);
+            tabPage9.Controls.Add(label21);
+            tabPage9.Controls.Add(lstPriorityQueueLL);
+            tabPage9.Controls.Add(txtElementPriorityQueueLL);
+            tabPage9.Controls.Add(btnDequeuePriorityQueueLL);
+            tabPage9.Controls.Add(btnEnqueuePriorityQueueLL);
             tabPage9.Location = new Point(4, 29);
             tabPage9.Name = "tabPage9";
             tabPage9.Padding = new Padding(3);
-            tabPage9.Size = new Size(1106, 385);
+            tabPage9.Size = new Size(676, 385);
             tabPage9.TabIndex = 8;
-            tabPage9.Text = "tabPage9";
+            tabPage9.Text = "priority queues (lists of lists)";
             tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(58, 26);
+            label30.Name = "label30";
+            label30.Size = new Size(189, 20);
+            label30.TabIndex = 55;
+            label30.Text = "Priority Queue (lists of lists)";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(58, 107);
+            label19.Name = "label19";
+            label19.Size = new Size(59, 20);
+            label19.TabIndex = 54;
+            label19.Text = "Priority:";
+            // 
+            // txtPriorityPriorityQueueLL
+            // 
+            txtPriorityPriorityQueueLL.Location = new Point(130, 104);
+            txtPriorityPriorityQueueLL.Name = "txtPriorityPriorityQueueLL";
+            txtPriorityPriorityQueueLL.Size = new Size(125, 27);
+            txtPriorityPriorityQueueLL.TabIndex = 53;
+            // 
+            // btnShowPriorityQueueLL
+            // 
+            btnShowPriorityQueueLL.Location = new Point(148, 253);
+            btnShowPriorityQueueLL.Name = "btnShowPriorityQueueLL";
+            btnShowPriorityQueueLL.Size = new Size(94, 29);
+            btnShowPriorityQueueLL.TabIndex = 52;
+            btnShowPriorityQueueLL.Text = "Show";
+            btnShowPriorityQueueLL.UseVisualStyleBackColor = true;
+            btnShowPriorityQueueLL.Click += btnShowPriorityQueueLL_Click;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(347, 26);
+            label20.Name = "label20";
+            label20.Size = new Size(79, 20);
+            label20.TabIndex = 51;
+            label20.Text = "capacity: 5";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(58, 60);
+            label21.Name = "label21";
+            label21.Size = new Size(66, 20);
+            label21.TabIndex = 50;
+            label21.Text = "Element:";
+            // 
+            // lstPriorityQueueLL
+            // 
+            lstPriorityQueueLL.FormattingEnabled = true;
+            lstPriorityQueueLL.Location = new Point(347, 57);
+            lstPriorityQueueLL.Name = "lstPriorityQueueLL";
+            lstPriorityQueueLL.Size = new Size(307, 284);
+            lstPriorityQueueLL.TabIndex = 49;
+            // 
+            // txtElementPriorityQueueLL
+            // 
+            txtElementPriorityQueueLL.Location = new Point(130, 57);
+            txtElementPriorityQueueLL.Name = "txtElementPriorityQueueLL";
+            txtElementPriorityQueueLL.Size = new Size(125, 27);
+            txtElementPriorityQueueLL.TabIndex = 48;
+            // 
+            // btnDequeuePriorityQueueLL
+            // 
+            btnDequeuePriorityQueueLL.Location = new Point(148, 200);
+            btnDequeuePriorityQueueLL.Name = "btnDequeuePriorityQueueLL";
+            btnDequeuePriorityQueueLL.Size = new Size(94, 29);
+            btnDequeuePriorityQueueLL.TabIndex = 47;
+            btnDequeuePriorityQueueLL.Text = "Dequeue";
+            btnDequeuePriorityQueueLL.UseVisualStyleBackColor = true;
+            btnDequeuePriorityQueueLL.Click += btnDequeuePriorityQueueLL_Click;
+            // 
+            // btnEnqueuePriorityQueueLL
+            // 
+            btnEnqueuePriorityQueueLL.Location = new Point(148, 150);
+            btnEnqueuePriorityQueueLL.Name = "btnEnqueuePriorityQueueLL";
+            btnEnqueuePriorityQueueLL.Size = new Size(94, 29);
+            btnEnqueuePriorityQueueLL.TabIndex = 46;
+            btnEnqueuePriorityQueueLL.Text = "Enqueue";
+            btnEnqueuePriorityQueueLL.UseVisualStyleBackColor = true;
+            btnEnqueuePriorityQueueLL.Click += btnEnqueuePriorityQueueLL_Click;
             // 
             // btnBack
             // 
@@ -880,12 +1080,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1717, 450);
+            ClientSize = new Size(1262, 450);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnBack);
             Controls.Add(tabControl1);
             Name = "Queues";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Queues";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
@@ -904,6 +1105,8 @@
             tabPage7.PerformLayout();
             tabPage8.ResumeLayout(false);
             tabPage8.PerformLayout();
+            tabPage9.ResumeLayout(false);
+            tabPage9.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -987,5 +1190,23 @@
         private TextBox txtPriorityPriorityQueueLV;
         private Button btnDeququqPriorityQueueLV;
         private Button btnEnqueuePriorityQueueLV;
+        private Label label19;
+        private TextBox txtPriorityPriorityQueueLL;
+        private Button btnShowPriorityQueueLL;
+        private Label label20;
+        private Label label21;
+        private ListBox lstPriorityQueueLL;
+        private TextBox txtElementPriorityQueueLL;
+        private Button btnDequeuePriorityQueueLL;
+        private Button btnEnqueuePriorityQueueLL;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private Label label26;
+        private Label label22;
+        private Label label27;
+        private Label label28;
+        private Label label29;
+        private Label label30;
     }
 }
