@@ -16,5 +16,29 @@ namespace ProyectoFinalProgramacion
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            LinearStructuresForm linearStructuresForm = new LinearStructuresForm();
+            linearStructuresForm.Show();
+            this.Close();
+        }
+
+        //static stack
+
+        private void btnPushStaticStack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPopStaticStack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPeekStaticStack_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
