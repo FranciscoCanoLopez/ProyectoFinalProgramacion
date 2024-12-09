@@ -117,4 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>A search algorithm is a set of instructions designed to locate a specific element within a data structure. 
+They are a fundamental technique of computer science that is applied in fields 
+such as artificial intelligence, databases, and search engines.</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>This method consists of going through the array or vector 
+element by element and comparing it with the value sought (key). 
+It starts with the first cell of the vector and looks at one cell after 
+another until the sought element is found or all the cells have been seen.</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Sequential searching, also known as linear searching, is a method of searching 
+for items in a list that examines each item in the list until the target 
+value is found or until all items have been examined.</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Binary search is an algorithm that allows you to find an element in an ordered list efficiently. This algorithm
+works by splitting the list into two halves and comparing the searched element with the middle element. 
+If the searched element is equal to the middle element, the index of the 
+element is returned. Otherwise, the half in which the element cannot 
+be is removed and the search is continued on the other half.</value>
+  </data>
 </root>

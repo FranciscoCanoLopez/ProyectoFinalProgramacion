@@ -16,5 +16,12 @@ namespace ProyectoFinalProgramacion
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            AlgorithmsForm algorithmsForm = new AlgorithmsForm();
+            algorithmsForm.Show();
+            this.Close();
+        }
     }
 }

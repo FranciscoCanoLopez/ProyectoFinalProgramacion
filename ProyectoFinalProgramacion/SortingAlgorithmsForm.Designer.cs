@@ -95,13 +95,13 @@
             tabPage8 = new TabPage();
             dataGridViewStepsCombSort = new DataGridView();
             btnSortCombSort = new Button();
-            timer1 = new System.Windows.Forms.Timer(components);
             tabPage9 = new TabPage();
-            btnRandomizeRadixSort = new Button();
-            btnLSDRadixSort = new Button();
-            btnMSDRadixSort = new Button();
-            txtNumbersRadixSort = new TextBox();
             lstSortedRadixSort = new ListBox();
+            txtNumbersRadixSort = new TextBox();
+            btnMSDRadixSort = new Button();
+            btnLSDRadixSort = new Button();
+            btnRandomizeRadixSort = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -808,11 +808,6 @@
             btnSortCombSort.UseVisualStyleBackColor = true;
             btnSortCombSort.Click += btnSortCombSort_Click;
             // 
-            // timer1
-            // 
-            timer1.Interval = 500;
-            timer1.Tick += timer1_Tick;
-            // 
             // tabPage9
             // 
             tabPage9.Controls.Add(lstSortedRadixSort);
@@ -828,43 +823,6 @@
             tabPage9.Text = "RadixSort";
             tabPage9.UseVisualStyleBackColor = true;
             // 
-            // btnRandomizeRadixSort
-            // 
-            btnRandomizeRadixSort.Location = new Point(121, 121);
-            btnRandomizeRadixSort.Name = "btnRandomizeRadixSort";
-            btnRandomizeRadixSort.Size = new Size(94, 29);
-            btnRandomizeRadixSort.TabIndex = 0;
-            btnRandomizeRadixSort.Text = "Randomize";
-            btnRandomizeRadixSort.UseVisualStyleBackColor = true;
-            btnRandomizeRadixSort.Click += btnRandomizeRadixSort_Click;
-            // 
-            // btnLSDRadixSort
-            // 
-            btnLSDRadixSort.Location = new Point(121, 182);
-            btnLSDRadixSort.Name = "btnLSDRadixSort";
-            btnLSDRadixSort.Size = new Size(94, 29);
-            btnLSDRadixSort.TabIndex = 1;
-            btnLSDRadixSort.Text = "LSD";
-            btnLSDRadixSort.UseVisualStyleBackColor = true;
-            btnLSDRadixSort.Click += btnLSDRadixSort_Click;
-            // 
-            // btnMSDRadixSort
-            // 
-            btnMSDRadixSort.Location = new Point(121, 241);
-            btnMSDRadixSort.Name = "btnMSDRadixSort";
-            btnMSDRadixSort.Size = new Size(94, 29);
-            btnMSDRadixSort.TabIndex = 2;
-            btnMSDRadixSort.Text = "MSD";
-            btnMSDRadixSort.UseVisualStyleBackColor = true;
-            btnMSDRadixSort.Click += btnMSDRadixSort_Click;
-            // 
-            // txtNumbersRadixSort
-            // 
-            txtNumbersRadixSort.Location = new Point(114, 79);
-            txtNumbersRadixSort.Name = "txtNumbersRadixSort";
-            txtNumbersRadixSort.Size = new Size(125, 27);
-            txtNumbersRadixSort.TabIndex = 3;
-            // 
             // lstSortedRadixSort
             // 
             lstSortedRadixSort.FormattingEnabled = true;
@@ -872,6 +830,48 @@
             lstSortedRadixSort.Name = "lstSortedRadixSort";
             lstSortedRadixSort.Size = new Size(272, 204);
             lstSortedRadixSort.TabIndex = 4;
+            // 
+            // txtNumbersRadixSort
+            // 
+            txtNumbersRadixSort.Location = new Point(28, 30);
+            txtNumbersRadixSort.Name = "txtNumbersRadixSort";
+            txtNumbersRadixSort.Size = new Size(523, 27);
+            txtNumbersRadixSort.TabIndex = 3;
+            // 
+            // btnMSDRadixSort
+            // 
+            btnMSDRadixSort.Location = new Point(155, 129);
+            btnMSDRadixSort.Name = "btnMSDRadixSort";
+            btnMSDRadixSort.Size = new Size(94, 29);
+            btnMSDRadixSort.TabIndex = 2;
+            btnMSDRadixSort.Text = "MSD";
+            btnMSDRadixSort.UseVisualStyleBackColor = true;
+            btnMSDRadixSort.Click += btnMSDRadixSort_Click;
+            // 
+            // btnLSDRadixSort
+            // 
+            btnLSDRadixSort.Location = new Point(155, 80);
+            btnLSDRadixSort.Name = "btnLSDRadixSort";
+            btnLSDRadixSort.Size = new Size(94, 29);
+            btnLSDRadixSort.TabIndex = 1;
+            btnLSDRadixSort.Text = "LSD";
+            btnLSDRadixSort.UseVisualStyleBackColor = true;
+            btnLSDRadixSort.Click += btnLSDRadixSort_Click;
+            // 
+            // btnRandomizeRadixSort
+            // 
+            btnRandomizeRadixSort.Location = new Point(28, 80);
+            btnRandomizeRadixSort.Name = "btnRandomizeRadixSort";
+            btnRandomizeRadixSort.Size = new Size(94, 29);
+            btnRandomizeRadixSort.TabIndex = 0;
+            btnRandomizeRadixSort.Text = "Randomize";
+            btnRandomizeRadixSort.UseVisualStyleBackColor = true;
+            btnRandomizeRadixSort.Click += btnRandomizeRadixSort_Click;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 500;
+            timer1.Tick += timer1_Tick;
             // 
             // SortingAlgorithmsForm
             // 
