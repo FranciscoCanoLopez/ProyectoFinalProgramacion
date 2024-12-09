@@ -16,5 +16,26 @@ namespace ProyectoFinalProgramacion
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            DataStructuresForm dataStructuresForm = new DataStructuresForm();
+            dataStructuresForm.Show();
+            this.Close();
+        }
+
+        private void btnBinariTree_Click(object sender, EventArgs e)
+        {
+            BinariTree tree = new BinariTree();
+            tree.Show();
+            this.Hide();
+        }
+
+        private void btnGraphs_Click(object sender, EventArgs e)
+        {
+            Graphs graphs = new Graphs();
+            graphs.Show();
+            this.Hide();
+        }
     }
 }

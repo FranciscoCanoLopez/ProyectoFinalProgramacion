@@ -24,3 +24,5 @@ C:\Users\volub\source\repos\ProyectoFinalProgramacion\ProyectoFinalProgramacion\
 C:\Users\volub\source\repos\ProyectoFinalProgramacion\ProyectoFinalProgramacion\obj\Debug\net8.0-windows\ProyectoFinalProgramacion.Queues.resources
 C:\Users\volub\source\repos\ProyectoFinalProgramacion\ProyectoFinalProgramacion\obj\Debug\net8.0-windows\ProyectoFinalProgramacion.Stacks.resources
 C:\Users\volub\source\repos\ProyectoFinalProgramacion\ProyectoFinalProgramacion\obj\Debug\net8.0-windows\ProyectoFinalProgramacion.sourcelink.json
+C:\Users\volub\source\repos\ProyectoFinalProgramacion\ProyectoFinalProgramacion\obj\Debug\net8.0-windows\ProyectoFinalProgramacion.BinariTree.resources
+C:\Users\volub\source\repos\ProyectoFinalProgramacion\ProyectoFinalProgramacion\obj\Debug\net8.0-windows\ProyectoFinalProgramacion.Graphs.resources

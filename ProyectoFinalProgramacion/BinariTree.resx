@@ -118,8 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>Non-linear data structures, also known as multi-linked, are those in which each element can be 
-linked to any other component. In other words, each element can have several predecessors or successors.
-Some examples of non-linear data structures are trees and graphs.</value>
+    <value>A binary tree is a tree-like data structure, where each node can 
+have at most two child nodes, called left and right nodes.
+
+Binary trees are useful when the size of the structure is unknown and its elements need 
+to be accessed in an ordered manner. Some common uses of binary trees 
+are binary search trees, binary heaps, and Huffman Coding.
+
+To search for an element in a binary search tree, the root of the tree is accessed. If the element 
+matches the root, the search ends. If the element is smaller, the left subtree is s
+earched, and if it is larger, the right subtree is searched.</value>
   </data>
 </root>
